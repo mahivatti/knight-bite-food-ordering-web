@@ -1,0 +1,648 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:cursive;
+    
+}
+nav{
+
+    background-color: rgba(0, 0, 0, 0.26);
+    display: flex;  /*it converts block elements to inline elements of a prent*/
+    justify-content: space-between;
+    align-items: center;/* all the lements in the nav tag comes vertically centre*/
+    padding: 1rem;
+    position: fixed;
+    min-width: 100%;
+}
+.links ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;/* 1rem =16px*/
+    font-size: x-large;
+    padding: 0 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: purple;
+    text-transform:uppercase;
+}
+
+.header-home{
+    background: url(./assets/images/home/app-link-background.svg) no-repeat center/cover;
+    height: 100vh; /* view port hieght*/    
+    text-align: center;
+    color: aliceblue;
+    align-content: center;
+    
+    h1{
+        margin-bottom: 2.5rem;
+        font-size: 5rem;
+    }
+    #ios-store{
+        height: 3.6rem;
+    }
+    .store-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.features{
+    text-align: center;
+    min-height:50vh;
+    align-content: center;
+    padding:0 2rem;
+    .inner-features{
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    h1{
+        font-size: 4.5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+
+.banner1{
+    background: url(./assets/images/home/banner-1.webp) no-repeat center/cover;
+    min-height: 100vh;
+    text-align: center;
+    align-content: center;
+    h1{
+        font-size: 4.5rem;
+        color: white;
+    }
+}
+
+.banner2{
+    background: url(./assets/images/home/banner-2.webp) no-repeat center/cover;
+    min-height: 100vh;
+    text-align: center;
+    align-content: center;
+    h1{
+        font-size: 4.5rem;
+        color: white;
+    }
+
+    button{
+        background-color: transparent;
+        color: white;
+        margin-top: 5rem;
+        text-decoration: none;
+        padding: 1rem;
+        border-radius: 50px;
+    }
+    button:hover{
+        text-transform: uppercase;
+
+    }
+}
+
+/*footer */
+.footer-home{
+    min-height: 50vh;
+    align-content: center;
+
+    h1{
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+    a{
+        color: black;
+    }
+    a:hover{
+    color: purple;
+    text-transform:uppercase;
+    }
+
+    .footer-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        gap:3rem;
+        justify-content: center;
+        padding: 0 2rem;
+        line-height: 2rem;
+    }
+
+    .social-media ul{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    .social-media ul:hover{
+        
+    }
+    h3{
+        margin-bottom: 2rem;
+    }
+
+    .send-mail input{
+        padding: 1rem 2rem;
+        width: 50%;
+        border-radius: 30px;
+        border: 1px solid grey;
+        margin-top: 2rem;
+    }
+    .send-mail img{
+        height: 4rem;
+        position: absolute;
+        left: 24rem;
+        margin-top: 1.5rem;
+    }
+    .send-mail{
+        position: relative;
+    }
+    
+    .footer-logos{
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .footer-end{
+        text-align: center;
+        font-size: 13px;
+        color: white;
+        background: linear-gradient(to right,purple, hotpink);
+        padding: 1rem;
+    }
+}
+
+
+
+/* css for about page */
+/*about footer*/
+.about-header{
+    background: url(./assets/images/about/banner.webp) no-repeat center/cover;
+    height: 100vh; /* view port hieght*/    
+    text-align: center;
+    color: aliceblue;
+    align-content: center;
+    
+    h1{
+        margin-bottom: 2.5rem;
+        font-size: 5rem;
+        text-align: left;
+    }
+}
+.about-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    img{
+        margin-top: 2rem;
+        width: 95%;
+        margin-right: 4rem;
+    }
+    .about-apps{
+    align-content: center;
+    margin-top: 2rem;
+    text-align: justify;
+
+    }
+    .about-appmenu{
+         align-content: center;
+        margin-top: 2rem;
+
+    }
+    .about-burg{
+        align-content: center;
+        margin-top: 2rem;
+    }
+}
+
+.about-footer {
+    background-color: #f1f1f1; 
+    padding: 60px 10%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    border-top: 1px solid #ddd;
+}
+
+
+.about-location h3 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+
+.about-location li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 30px; 
+    list-style: none;
+}
+
+.about-follow h3{
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.about-icons ul {
+    display: flex;
+    list-style: none;
+    gap: 25px; 
+}
+
+
+.about-footer-end{
+        text-align: center;
+        font-size: 13px;
+        color: white;
+        background
+        : linear-gradient(to right, violet,hotpink);
+        padding: 1rem;
+    }
+
+
+/*  MENU  */
+/*NAVIGATION BAR STYLES */
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Pushes Logo left, Links right */
+    align-items: center;            /* Vertically centers them */
+    padding: 20px 50px;
+    width: 100%;
+    position: absolute;             /* Sit on top of the banner image */
+    top: 0;
+    left: 0;
+    z-index: 100;                   /* Ensure it stays above everything */
+    box-sizing: border-box;         
+}
+
+.logo img {
+    height: 50px;                   
+    width: auto;
+}
+
+.navlinks ul {
+    display: flex;                 
+    list-style: none;               
+    gap: 40px;                      
+    margin: 0;
+    padding: 0;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;  
+    font-weight: 500;
+    position: relative;
+}
+
+
+.menu-home {
+    
+    background: url("./Assests/images/menu/banner.webp") no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+
+/*  MENU GRID */
+
+.menu-mid {
+    position: absolute;
+    inset: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+    place-items: center;
+    gap: 4rem;
+}
+
+
+/*  MENU ITEMS  */
+
+.menu-item {
+    text-align: center;
+    color: white;
+}
+
+.menu-item img {
+    width: 90px;
+    margin-bottom: 1rem;
+}
+
+.menu-item p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/*  PLUS BUTTON  */
+
+.plus-btn {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 32px;
+    transition: 0.3s ease;
+}
+
+.plus-btn:hover {
+    background: white;
+    color: black;
+}
+
+
+/*  POPUP OVERLAY  */
+
+.popup {
+    position: fixed;
+    inset: 0;
+    background: black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup:target {
+    display: flex;
+}
+
+
+/*  POPUP CONTENT  */
+
+.popup-content {
+    background: white;
+    width: 750px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+    color: black;
+}
+
+
+/* CLOSE BUTTON */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* POPUP TEXT */
+
+.popup-content h2 {
+    margin-bottom: 15px;
+}
+
+.popup-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #c1121f;
+}
+
+.popup-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popup-content li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/*  ANIMATION */
+
+.popup-content {
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
+
+.popup:target .popup-content {
+    transform: scale(1);
+}
+body{
+    margin: 0;
+}
+.footer{
+   
+        text-align: center;
+        font-size: 13px;
+        color: white;
+        background: linear-gradient(to right, violet,hotpink);
+        padding: 1rem;
+    }
+
+/*nav*/
+.menu-home {
+    min-height: 100vh;
+    background: url("./assets/images/menu/banner.webp") no-repeat center top;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.franchise-header{
+    background: url(./assets/images/fran/video-bg.png) no-repeat center/cover;
+    align-content: center;
+    height: 100vh;
+    text-align: center;
+    .button-d{
+        margin-top: 5rem;
+        background-color: rgb(199, 61, 73);
+        color: #ddd;
+        font-size: 2.5rem;
+        border-radius: 20%;
+    }
+}
+.franchise-main{
+    height: 100vh;
+    text-align: center;
+    padding: 4rem;
+    .franchise-phase1{
+        h1{
+            font-size: 3rem;
+            font-style: italic;
+            padding: 1.5rem;
+        }
+        p{
+            font-size: 1.3rem;
+            font-style: oblique;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .franchise-phase2{
+        margin-top: 2rem;
+        h1{
+            text-align: center;
+            font-style: italic;
+        }
+        .elements{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            padding: 2rem;
+            margin-top: 1.5rem;
+            h3{
+                font-style: oblique;
+                margin-top: 0.5rem;
+            }
+            p{
+                font-style: roblique;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+    .franchise-phase3{
+        margin-top:2rem;
+        h5{
+            margin-top: 1.5rem;
+        }
+        .element2{
+            display: flex; 
+             #form-img{
+                width: 70%;
+            }
+            #franchise-form{
+                background-color: rgb(199, 198, 198);
+                height: 35rem;
+                width: 40%;
+                border-radius: 20px;
+            }
+            #input-id{
+                margin-top: 1.5rem;
+                height: 2.5rem;
+                width: 25rem;
+                border-radius: 15px;
+                border: none;
+                padding: 5px;
+            }
+            .send-request-btn{
+                background-color: hotpink;
+                height: 3rem;
+                width: 15rem;
+                border: none;
+                border-radius: 25px;
+                color: white;
+                font-size: 1.2rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+    .franchise-phase4 {
+    h1 {
+        font-size: 2.5rem; 
+        font-weight: bold;
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font-family: sans-serif; 
+    }
+
+    .elements3 {
+        display: flex;
+        justify-content: center; 
+        gap: 5rem;
+        align-items: center;
+        padding-bottom: 4rem;
+        flex-wrap: wrap;  
+
+        .query-item {
+            display: flex;
+            align-items: center;
+            gap: 15px; 
+            
+            img {
+                height: 30px; 
+                width: auto;
+            }
+
+            span {
+                font-size: 1.1rem;
+                color: #333;
+                font-family: sans-serif;
+            }
+        }
+    }
+
+    }
+    .footer-end{
+        text-align: center;
+        font-size: 13px;
+        color: white;
+        background: linear-gradient(to right,violet,hotpink);
+        padding: 1rem;
+        margin-top: 4rem;
+        width: 200vh;
+        margin-left: -4.4rem;
+    }
+}
+
+/* home page mobile responsive coe*/
+@media (min-width:1px) and (max-width:576px){
+    .logo img{
+        height: 3rem;
+    }
+    nav{
+        flex-direction: column;
+        gap: 2rem;
+
+        .links a{
+            font-size: 1.15rem;
+            
+        }
+    }
+    .features{
+        .inner-features{
+            flex-direction: column;
+        
+        }
+        h1{
+            font-size: xx-large;
+        }
+        
+        padding: 1rem 1rem;
+    }
+
+    .footer-home{
+        .footer-main{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        margin-left: 2.5rem;
+        list-style: none;
+        }
+        .send-mail img{
+            left: 13rem;
+        }
+    }
+}
